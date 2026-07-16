@@ -1,0 +1,236 @@
+ 
+.container{
+    width: 95%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding:15px 30px;
+    border-radius: 10px;
+    gap: 15px;
+}
+ .container{ 
+
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
+    border: 1px solid rgba(255,255,255,0.35);
+}
+ nav{
+    margin: 10px ;
+    margin: 0 0 8px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    padding: 8px 12px;
+    background: #553f9a;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav ul li:hover{
+    background: #6c4ccf;
+    transform: translateY(-2px);
+}
+ .container hr{
+    height: 2px;
+    border: none;
+    background: #707070;
+ }
+ 
+.container h2{
+    font-size: 22px;
+}
+ .container ul{
+    padding: 0;
+    margin-top: 30px;
+}
+
+.container ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    border: 1px solid #d0d0d0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.container ul li:not(.correct):not(.Wrong):hover{
+    background: #ede8ff;
+    border-color: #553f9a;
+    transform: translateX(5px);
+}
+ 
+ .container button{
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    margin: auto;
+    background: #553f9a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+     transition: all 0.3s ease;
+}
+.container button:hover{
+    background: #6c4ccf;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(85, 63, 154, 0.4);
+}
+
+.container .index{
+margin: auto;
+font-size: 16px;
+
+}
+.container .correct{
+    background: #dffff2;
+    border-color: #00d397;
+}
+.container .Wrong{
+    background: #ffebeb;
+    border-color: #ff4a4a;
+}
+.correct{
+    background: #d4edda !important;
+    border: 2px solid #28a745 !important;
+    color: #155724;
+}
+
+.Wrong{
+    background: #f8d7da !important;
+    border: 2px solid #dc3545 !important;
+    color: #721c24;
+}
+.jump-box{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.jump-box input{
+    flex: 1;
+    min-width: 120px;
+    max-width: 180px;
+    height: 45px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.jump-box button{
+    width: 90px !important;
+    height: 45px !important;
+}
+
+@media(max-width:768px){
+    body{
+        min-height: 100vh;
+        background-image: url(../assets/backimg.jpeg );
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+.container{
+    width: calc(100% - 48px);
+    max-width: 340px;
+    padding:22px;
+     border-radius: 18px;
+    margin:40px auto;
+  
+    background: rgba(255,255,255,.25);
+backdrop-filter: blur(25px);
+-webkit-backdrop-filter: blur(25px);
+border: 1px solid rgba(255,255,255,.3);
+border-radius: 18px;
+}
+
+
+.container h2{
+    font-size:19px;
+    line-height:28px;
+}
+
+.container ul li{
+    font-size:16px;
+    min-height:48px;
+    margin-bottom:10px;
+}
+
+.container button{
+    width:100%;
+    max-width:none;
+    height:48px;
+    font-size:18px;
+}
+
+.jump-box{
+    flex-direction:column;
+    align-items:center;
+}
+
+.jump-box input{
+    width:100%;
+    max-width:250px;
+}
+
+.jump-box button{
+    width:100% !important;
+    max-width:250px;
+}
+
+.index{
+    text-align:center;
+}
+}
+@media (max-width:480px){
+
+    .container{
+    width: 88%;
+    max-width: 340px;
+    padding: 14px 16px;
+    margin: 20px auto;
+    border-radius: 16px;
+}
+
+.container h1{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.container h2{
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.container ul{
+    margin-top: 15px;
+}
+
+.container ul li{
+    min-height: 45px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+}
